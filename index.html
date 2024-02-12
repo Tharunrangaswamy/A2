@@ -1,28 +1,8 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the code from GitHub
-                script {
-                    git ''
-                }
-            }
-        }
-
-        stage('Build and Deploy') {
-            steps {
-                // Assuming your Apache document root is /var/www/html/
-
-                // Ensure the 'index.html' file is added to the working directory
-              
-
-                // Copy the contents to the Apache document root
-                script {
-                    sh 'cp -r * /var/www/html/'
-                }
-            }
-        }
-    }
-}
+<html>
+    <head>
+        <title>WELCOME</title>
+    </head>
+    <body bgcolor='skyblue'>
+        <h1> This is my first task</h1>
+    </body>
+</html>
